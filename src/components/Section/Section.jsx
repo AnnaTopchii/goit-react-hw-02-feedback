@@ -1,16 +1,11 @@
 import PropTypes from 'prop-types';
-// import {
-//   StatisticsCard,
-//   StatisticsTitle,
-//   StatisticsBlock,
-//   StatisticsBlockItem,
-// } from './Statistics.styled';
+import { Container, Title } from './Section.styled';
 
 export const Section = ({ title, children }) => (
-  <>
-    {title && <h1>{title}</h1>}
+  <Container>
+    {title && <Title>{title}</Title>}
     {children}
-  </>
+  </Container>
 );
 
 Section.propTypes = {
